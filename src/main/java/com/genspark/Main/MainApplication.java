@@ -15,11 +15,16 @@ public class MainApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("/View/second.fxml"));
         System.out.println(getClass().getResource("/CssStyle/backgroundStyle.css"));
         //Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("View/aviation.fxml")));
-        Parent root = fxmlLoader.load();
-        Scene scene = new Scene(root);
-        stage.initStyle(StageStyle.UNDECORATED);
-        stage.setScene(scene);
-        stage.show();
+
+            Parent root = fxmlLoader.load();
+            Scene scene = new Scene(root);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setScene(scene);
+            stage.show();
+
+            System.out.println("idk man");
+
+
 
 
     }
